@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.Body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.Acordeon-titulo {
+    padding-bottom: 0.5em;
+}
+
+.Acordeon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 80%;
+    max-width: 120em;
+    border-radius: 29px;
+    background: #f2f2f2;
+    box-shadow:  16px 16px 29px #c4c4c4,
+             -16px -16px 29px #ffffff;
+}
+
+.Bloque {
+    width: 80%;
+    margin: 0 0 1em;
+    padding: 1em;
+    border-radius: 29px;
+    background: #f2f2f2;
+    box-shadow:  16px 16px 29px #c4c4c4,
+                -16px -16px 29px #ffffff;
+}
+
+.Bloque-titulo {
+    margin: 0 0 1em;
+    padding: 1em;
+    border-radius: 29px;
+    background: #f2f2f2;
+    box-shadow:  16px 16px 29px #c4c4c4,
+                -16px -16px 29px #ffffff;
+}
+
+.Bloque-contenido {
+    padding: 0em;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.isActive {
+    height: 4em;
+}
